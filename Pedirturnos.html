@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>TURNOS</title>
+
+    <link rel="stylesheet" href="Form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="Form.css" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="./src/scripts/app.js" async></script>
+    <script src="main.js" async></script>
+  </head>
+  <body>
+    <form id="myForm" action="" method="post" autocomplete = "off">
+      <h1 align = center>Solicita tu turno</h1>
+
+      <div style="text-align:center;">
+        <span class="step" id = "step-1">1</span>
+        <span class="step" id = "step-2">2</span>
+        <span class="step" id = "step-3">3</span>
+        <span class="step" id = "step-4">4</span>
+      </div>
+
+      <div class="tab" id = "tab-1">
+        <p>Datos personales:</p>
+        <input type = "text" placeholder="Nombre Completo" Nombre ="firstname">
+        <input type = "text" placeholder="Apellido" name="lastname">
+        <div class="index-btn-wrapper">
+          <div class="index-btn" onclick="run(1, 2);">Siguiente</div>
+        </div>
+      </div>
+
+      <div class="tab" id = "tab-2">
+        <p>Información de Contacto:</p>
+        <input type = "text" placeholder="Email" name="email">
+        <input type = "text" placeholder="Telefono" name="phone">
+        <div class="index-btn-wrapper">
+          <div class="index-btn" onclick="run(2, 1);">Atras</div>
+          <div class="index-btn" onclick="run(2, 3);">Siguiente</div>
+        </div>
+      </div>
+
+      <div class="tab" id = "tab-3">
+        <p>Cumpleaños de tu mascota:</p>
+        <input type = "text" placeholder="Dia" name="dd">
+        <input type = "text" placeholder="Mes" name="mm">  
+        <div class="index-btn-wrapper">
+          <div class="index-btn" onclick="run(3, 2);">Atras</div>
+          <div class="index-btn" onclick="run(3, 4);">Siguiente</div>
+        </div>
+      </div>
+
+      <div class="tab" id = "tab-4">
+        <p>Agenda tu turno:</p>
+        <script src="https://embed.ycb.me"	async="true"	data-domain="senestrariluc"></script>
+          <div class="index-btn" onclick="run(4, 3);">Atras</div>
+          <div class="index-btn" onclick="run(4, 5);">Siguiente</div>
+        </div>
+      </div>
+      <div class="tab" id = "tab-5">
+        <div class="index-btn-wrapper">
+          <div class="index-btn" onclick="run(5, 4);">Atras</div>
+          <button class = "index-btn" type="submit" name="submit" style = "background: blue;">Submit</button>
+        <script>
+
+        </script>
+        </div>
+      </div>
+    </form>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+  </body>
+</html>

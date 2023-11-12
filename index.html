@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/styles/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.7.1.app.js"></script>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="./src/scripts/app.js" async></script>
+  <script src="./src/scripts/main.js" async></script>
+
+  <title>Veterinaria</title>
+</head>
+
+<body>
+
+  <header class="header-container">
+    <div class="header-title">
+      <h1 class="title">Veterinaria Gold</h1>
+      <span class="material-symbols-outlined">
+        <img src="images/pets_1491117.png">
+      </span>
+    </div>
+    <nav>
+      <div class="nav-wrapper">
+        <a class="nav-item" href="#home">Home</a>
+        <a class="nav-item" href="#gallery">Servicios</a>
+        <a class="nav-item" href="#contact">Contacto</a>
+        <a class="nav-item" href="#social">Redes</a>
+        <li class="menu__item menu__item--show">
+          <a href="#" class="menu__link">Turnos <img src="images/arrow.svg" class="menu__arrow"></a>
+
+          <ul class="menu__nesting">
+            <li class="menu__inside">
+              <a href="Pedirturnos.html" target="_blank" class="menu__link menu__link--inside">Pedir Turnos</a>
+            </li>
+            <li class="menu__inside">
+              <a href="#" class="menu__link menu__link--inside">Revisar Turno</a>
+            </li>
+
+        </li>
+        </ul>
+        </li>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <div class="resume-container">
+        <p class="resume-text">Tu mascota, nuestra familia, nuestra prioridad</p>
+      </div>
+    </section>
+    <section id="about"> 
+      <picture>
+        <source
+         media="(min-width:min-width: 741px)"
+          srcset="images/desktop/vete.png"
+          src="images/mobile/vete.png"
+        />
+        <img
+          id="vete"
+          alt="veterinarios"
+          src="images/mobile/vete.png"
+
+
+        />
+      </picture>
+      <div class="description">
+      <h2>Quienes somos</h2>
+        <p>
+          somos un grupo de veterinarios apacionados por el cuidado y el amor de los animales, tu familia.
+        </p>
+      </div>
+    </section>
+    <section id="gallery">
+      <div class="gallery-wrapper">
+        <h2 class="section-title"> Servicios</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <picture>
+              <figure>
+                <source
+                  media="(min-width:min-width: 654px 240px)"
+                  srcset="images/desktop/shop.png"
+                />
+                <img
+                  src="images/mobile/shop.png" height="240px"
+                  alt="Pet shop"
+                  title="Nuestro Shop"
+                />
+              </figure>
+              <figcaption>Nuestro Shop</figcaption>
+            </picture>
+          </div>
+          <div class="gallery-item">
+            <picture>
+              <figure>
+                <source
+                  media="(min-width:min-width: 800px)"
+                  srcset="images/desktop/turno.pngg"
+              
+                />
+                <img
+                  src="images/mobile/turno.png" height="240px"
+                  alt="Turnos"
+                  title="Atención Clínica/ Turnos"
+                  />
+              </figure>
+              <figcaption>Atención Clínica</figcaption>
+            </picture>
+          </div>
+          <div class="gallery-item">
+            <picture>
+              <figure>
+                <source
+                  media="(min-width:min-width: 800px)"
+                  srcset="/images/desktop/labo.png"
+                />
+                <img
+                  src="images/mobile/labo.png" height="240px"
+                  alt="Laboratorio "
+          title="Laboratorio" />
+              </figure>
+              <figcaption>Laboratorio</figcaption>
+            </picture>
+          </div>
+          <div class="gallery-item">
+            <picture>
+              <figure>
+                <source
+                  media="(min-width:min-width: 800px)"
+                  srcset="images/desktop/sonido.pngs"
+                />
+                <img
+                  src="images/mobile/sonido.png" height="240px"
+                  alt="arcade neon night "
+            title="Diagnósticos Ecográficos" />
+              </figure>
+              <figcaption>Diagnósticos Ecográficos</figcaption>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    
+    <section id="contact">
+      <div class="contact-wrapper">
+        <h2 class="section-title">Contacto</h2>
+        <h3>No dude en Escribirnos</h3>
+        <div class="form-container">
+          <form action="summit">
+            <input
+              class="input-contact"
+              type="email"
+              required placeholder="ejemplo@ejemplo.com"
+            />
+            <input type="text"
+                  class="input-contact"
+                  placeholder="Nombre y Apellido">
+            <textarea class="input-contact" 
+                  placeholder="Mensaje">
+                </textarea>
+            <input class="button-contact" type="submit" value="Send" />
+          </form>
+        </div>
+    </section>
+
+    <section id="social">
+      <div class="footer-container">
+        <a class="social-button" href="#">
+          <img src="images/icon-facebook.svg" alt="social-media-facebook"
+        /></a>
+        <a class="social-button" href="#">
+          <img
+            src="images/icon-instagram.svg"
+            alt="social-media-instagram"
+        /></a>
+        <a class="social-button" href="#">
+          <img src="images/icon-twitter.svg" alt="social-media-twitter"
+        /></a>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
